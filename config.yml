@@ -1,0 +1,16 @@
+title: <h1>b</h1><s>a</s>
+description: <h1>a</h1><s>a</s>
+template:
+  repo: lessh1greaterblessh1greaterlesssgreateralesssgreater-template
+  name: lessh1greaterblessh1greaterlesssgreateralesssgreater
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
