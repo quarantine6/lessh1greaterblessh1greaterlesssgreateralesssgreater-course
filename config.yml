@@ -8,9 +8,14 @@ before:
     title: Welcome!
     body: new-issue.md
 steps:
-  - title: First step
-    description: The first step in your course
+  - title: <h1>a</h1><s>a</s>
+    description: <h1>a</h1><s>a</s>
     event: issues.assigned
     link: '{{ repoUrl }}'
     actions:
       - type: closeIssue
+  - title: New step
+    actions:
+      - type: createIssue
+        title: A new issue
+        body: a-response-file.md
